@@ -1,8 +1,9 @@
-<p>user works!</p>
+<p>Pipes</p>
 
-<p class="user-text">Name: {{ name }}</p>
+<p class="user-text">Name: {{ name |uppercase}}</p>
 <p class="user-text">Age: {{ age }}</p>
 
-
+<p>{{marks | slice:0:3}}</p>
+<p>{{currentDate | date:'dd MMM yyyy'}}</p>
 <app-warning-component [title]="'this is a warning from user component'"
     (message)="receiveMessage($event)"></app-warning-component>
