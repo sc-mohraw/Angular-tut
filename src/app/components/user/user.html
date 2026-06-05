@@ -2,3 +2,7 @@
 
 <p class="user-text">Name: {{ name }}</p>
 <p class="user-text">Age: {{ age }}</p>
+
+
+<app-warning-component [title]="'this is a warning from user component'"
+    (message)="receiveMessage($event)"></app-warning-component>

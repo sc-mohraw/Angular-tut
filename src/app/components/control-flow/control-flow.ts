@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { WarningComponent } from '../reusablecomponents/warning-component/warning-component';
 
 @Component({
   selector: 'app-control-flow',
-  imports: [],
+  imports: [WarningComponent],
   templateUrl: './control-flow.html',
   styleUrl: './control-flow.css',
 })
