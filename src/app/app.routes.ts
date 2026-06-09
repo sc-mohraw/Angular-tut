@@ -5,6 +5,7 @@ import { DataBinding } from './components/data-binding/data-binding';
 import { SignalComp } from './components/signal-comp/signal-comp';
 import { AttributeDirective } from './components/attribute-directive/attribute-directive';
 import { ApiIntegration } from './components/api-integration/api-integration';
+import { Rxjs } from './components/rxjs/rxjs';
 
 export const routes: Routes = [
     {
@@ -30,6 +31,9 @@ export const routes: Routes = [
     {
         path: 'api-integration',
         component: ApiIntegration
+    },
+    {
+        path: 'rxjs',
+        component: Rxjs
     }
-
 ];
